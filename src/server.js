@@ -13,15 +13,21 @@ const onRequest = (request, response) => {
       htmlHandler.getIndex(request, response);
       break;
     case '/client1.html':
-      htmlHandler.getIndex(request, response);
-      mediaHandler.getParty(request, response);
+      htmlHandler.getParty(request, response);
       break;
     case '/client2.html':
-      htmlHandler.getIndex(request, response);
-      mediaHandler.getBling(request, response);
+      htmlHandler.getBling(request, response);
       break;
     case '/client3.html':
-      htmlHandler.getIndex(request, response);
+      htmlHandler.getBird(request, response);
+      break;
+    case '/party.mp4':
+      mediaHandler.getParty(request, response);
+      break;
+    case '/bling.mp43':
+      mediaHandler.getBling(request, response);
+      break;
+    case '/bird.mp4':
       mediaHandler.getBird(request, response);
       break;
     default:
