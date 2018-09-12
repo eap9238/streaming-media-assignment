@@ -24,7 +24,7 @@ const onRequest = (request, response) => {
     case '/party.mp4':
       mediaHandler.getParty(request, response);
       break;
-    case '/bling.mp43':
+    case '/bling.mp3':
       mediaHandler.getBling(request, response);
       break;
     case '/bird.mp4':

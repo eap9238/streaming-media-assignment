@@ -39,7 +39,7 @@ const loadFile = (request, response, fileName, fileType) => {
             'Content-Type': fileType,
         });
 
-        console.log(fileType);
+        console.dir(fileType);
 
         const stream = fs.createReadStream(file, { start, end });
 
@@ -60,7 +60,7 @@ const getParty = (request, response) => {
 };
 
 const getBling = (request, response) => {
-    loadFile(request, response, '../client/bling.mp3', 'audio/mp3');
+    loadFile(request, response, '../client/bling.mp3', 'audio/mpeg');
 };
 
 const getBird = (request, response) => {
